@@ -1,0 +1,31 @@
+<%- include('./include/Head.ejs') %>
+<body>
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a href="#" class="nav-link">HOME</a>
+    </li>
+    <li class="nav-item">
+      <a href="https://github.com/abhay676" class="nav-link" target="_blank"
+        >Github</a
+      >
+    </li>
+    <li class="nav-item">
+      <a href="https://abgoswami.netlify.com" class="nav-link" target="_blank"
+        >Abhay Goswami</a
+      >
+    </li>
+  </ul>
+  <div class="container">
+    <p class="display-2">QR-Image</p>
+    <hr />
+    <%- include('Form.ejs') %> <% if (ready) {%>
+    <a
+      href="../image.png"
+      download="qr-image.png"
+      class="btn btn-outline-success mt-4"
+      >Click to Download</a
+    >
+    <% } %>
+  </div>
+</body>
+<%- include('./include/End.ejs') %>
